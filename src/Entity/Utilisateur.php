@@ -57,12 +57,12 @@ class Utilisateur implements UserInterface
     /**
      * @ORM\Column(type="integer")
      */
-    private $niveau;
+    private $niveau  = 0;
 
     /**
      * @ORM\Column(type="integer")
      */
-    private $quota_actuel;
+    private $quota_actuel = 0;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -83,6 +83,11 @@ class Utilisateur implements UserInterface
      * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $departement;
+
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $isVerified = false;
 
     public function getId(): ?int
     {
@@ -281,6 +286,18 @@ class Utilisateur implements UserInterface
     public function setDepartement(?string $departement): self
     {
         $this->departement = $departement;
+
+        return $this;
+    }
+
+    public function isVerified(): bool
+    {
+        return $this->isVerified;
+    }
+
+    public function setIsVerified(bool $isVerified): self
+    {
+        $this->isVerified = $isVerified;
 
         return $this;
     }
