@@ -41,7 +41,7 @@
 										</div>
 										<div class="col-md-4">
 											<div class="input-group">
-												<input class="form-control" placeholder="Username" type="text">
+												{{ form_widget(form.idDemandeur, {'attr': {'class': 'form-control', 'style':'display:none'}}) }}
 												<span class="input-group-addon"><i class="fa fa-user"></i></span>
 											</div>
 											
@@ -52,7 +52,7 @@
 										
 										<div class="col-md-4">
 											<div class="input-group">
-												<input class="form-control" placeholder="Username" type="text">
+												{{ form_widget(form.idCollaborateur, {'attr': {'class': 'form-control', 'style':'display:none'}}) }}
 												<span class="input-group-addon"><i class="fa fa-user"></i></span>
 											</div>
 											
@@ -65,7 +65,7 @@
 										</div>
 										<div class="col-md-4">
 											<div class="input-group">
-												<input class="form-control" placeholder="Matricule" type="text">
+												{{ form_widget(form.matricule, {'attr': {'class': 'form-control', 'style':'display:none'}}) }}
 												<span class="input-group-addon"><i class="fa fa-circle-o"></i></span>
 											</div>
 											
@@ -75,7 +75,7 @@
 										</div>
 										<div class="col-md-4">
 											<div class="input-group">
-												<input class="form-control" placeholder="Departement" type="text">
+												{{ form_widget(form.departement, {'attr': {'class': 'form-control', 'style':'display:none'}}) }}
 												<span class="input-group-addon"><i class="fa fa-building-o"></i></span>
 											</div>
 											
@@ -92,7 +92,7 @@
 										</div>
 										<div class="col-md-3">
 											<div class="input-group">
-												<input class="form-control" placeholder="Date de debut" type="date">
+												{{ form_widget(form.dateDebut, {'attr': {'class': 'form-control', 'style':'display:none'}}) }}
 												<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
 											</div>
 											
@@ -102,7 +102,7 @@
 										</div>
 										<div class="col-md-3">
 											<div class="input-group">
-												<input class="form-control" placeholder="Date de fin" type="date">
+												{{ form_widget(form.dateFin, {'attr': {'class': 'form-control', 'style':'display:none'}}) }}
 												<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
 											</div>	
 										</div>
@@ -118,7 +118,7 @@
 										</div>
 										<div class="col-md-4">
 											<div class="input-group">
-												<input class="form-control" placeholder="durée" type="number">
+												{{ form_widget(form.duree, {'attr': {'class': 'form-control', 'style':'display:none'}}) }}
 												<span class="input-group-addon">Heure(s)</span>
 											</div>
 										</div>
@@ -178,6 +178,7 @@
 										</div>
 										<div class="col-md-4">
 											<div class="input-group">
+												{{ form_widget(form.idCD1, {'attr': {'class': 'form-control', 'style':'display:none'}}) }}
 												<input class="form-control" placeholder="Username" type="text">
 												<span class="input-group-addon"><i class="fa fa-user"></i></span>
 											</div> 	
@@ -207,7 +208,7 @@
 										</div>
 										<div class="col-md-4">
 											<div class="input-group">
-												<input class="form-control" placeholder="Username" type="text">
+												{{ form_widget(form.idRH1, {'attr': {'class': 'form-control', 'style':'display:none'}}) }}
 												<span class="input-group-addon"><i class="fa fa-user"></i></span>
 											</div> 	
 										</div>
@@ -236,7 +237,7 @@
 										</div>
 										<div class="col-md-4">
 											<div class="input-group">
-												<input class="form-control" placeholder="Username" type="text">
+												{{ form_widget(form.idDU1, {'attr': {'class': 'form-control', 'style':'display:none'}}) }}
 												<span class="input-group-addon"><i class="fa fa-user"></i></span>
 											</div> 	
 										</div>
@@ -285,7 +286,7 @@
 										</div>
 										<div class="col-md-3">
 											<div class="input-group">
-												<input class="form-control" placeholder="durée" type="number">
+												{{ form_widget(form.duree, {'attr': {'class': 'form-control', 'style':'display:none'}}) }}
 												<span class="input-group-addon">Heure(s)</span>
 											</div>
 											
@@ -302,7 +303,7 @@
 										</div>
 										<div class="col-md-4">
 											<div class="input-group">
-												<input class="form-control" placeholder="Username" type="text">
+												{{ form_widget(form.idCD2, {'attr': {'class': 'form-control', 'style':'display:none'}}) }}
 												<span class="input-group-addon"><i class="fa fa-user"></i></span>
 											</div> 	
 										</div>
@@ -331,7 +332,7 @@
 										</div>
 										<div class="col-md-4">
 											<div class="input-group">
-												<input class="form-control" placeholder="Username" type="text">
+												{{ form_widget(form.idRH2, {'attr': {'class': 'form-control', 'style':'display:none'}}) }}
 												<span class="input-group-addon"><i class="fa fa-user"></i></span>
 											</div> 	
 										</div>
@@ -360,7 +361,7 @@
 										</div>
 										<div class="col-md-4">
 											<div class="input-group">
-												<input class="form-control" placeholder="Username" type="text">
+												{{ form_widget(form.idDU2, {'attr': {'class': 'form-control', 'style':'display:none'}}) }}
 												<span class="input-group-addon"><i class="fa fa-user"></i></span>
 											</div> 	
 										</div>
