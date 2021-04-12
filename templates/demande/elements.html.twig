@@ -1,0 +1,418 @@
+{% extends 'homebase.html.twig' %}
+
+
+{% block main %}
+
+{{ form_start(form) }}
+<div class="main">
+			<!-- MAIN CONTENT -->
+			<div class="main-content">
+				<div class="container-fluid">
+					<h3 class="page-title">Nouvelle Demande d'heure supplémentaire</h3>
+					<div class="row">
+						<div class="col-md-12">
+							<!-- INPUT GROUPS -->
+							<div class="panel">
+								
+								<div class="panel-body">
+									<!-- deededededded -->
+									<br/>
+									<div class="row">
+										<div class="col-md-8">	
+										</div>
+										<div class="col-md-4">
+											<button class="btn btn-primary " style="width:100%"> Enregistrer la Demande </button> 	
+										</div>
+										
+									</div>
+									<br/>
+									<hr/>
+									<div class="row">
+										<div class="col-md-12">
+											<b style="color:black">1. Demande d'heure supplémentaires</b> 	
+										</div>
+									</div>
+									<br/>
+									
+									<!-- deededededded -->
+									<div class="row">
+										<div class="col-md-2">
+											<b>Je soussigné</b> 	
+										</div>
+										<div class="col-md-4">
+											<div class="input-group">
+												<input class="form-control" placeholder="Username" type="text">
+												<span class="input-group-addon"><i class="fa fa-user"></i></span>
+											</div>
+											
+										</div>
+										<div class="col-md-2">
+											<b>sollicite le collaborateur </b> 	
+										</div>
+										
+										<div class="col-md-4">
+											<div class="input-group">
+												<input class="form-control" placeholder="Username" type="text">
+												<span class="input-group-addon"><i class="fa fa-user"></i></span>
+											</div>
+											
+										</div>
+									</div>
+									<br/>
+									<div class="row">
+										<div class="col-md-2">
+											<b>Matricule : </b>  	
+										</div>
+										<div class="col-md-4">
+											<div class="input-group">
+												<input class="form-control" placeholder="Matricule" type="text">
+												<span class="input-group-addon"><i class="fa fa-circle-o"></i></span>
+											</div>
+											
+										</div>
+										<div class="col-md-2">
+											<b>Departement : </b> 	
+										</div>
+										<div class="col-md-4">
+											<div class="input-group">
+												<input class="form-control" placeholder="Departement" type="text">
+												<span class="input-group-addon"><i class="fa fa-building-o"></i></span>
+											</div>
+											
+										</div>
+									</div>
+									
+									<br/>
+									
+									
+									<!-- deededededded -->
+									<div class="row">
+										<div class="col-md-5">
+											<b>pour effectuer des heures supplémentaires sur la période du : </b> 	
+										</div>
+										<div class="col-md-3">
+											<div class="input-group">
+												<input class="form-control" placeholder="Date de debut" type="date">
+												<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+											</div>
+											
+										</div>
+										<div class="col-md-1">
+											<b>au</b> 	
+										</div>
+										<div class="col-md-3">
+											<div class="input-group">
+												<input class="form-control" placeholder="Date de fin" type="date">
+												<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+											</div>	
+										</div>
+									</div>
+									<br/>
+									
+									<!-- deededededded -->
+									
+									<!-- deededededded -->
+									<div class="row">
+										<div class="col-md-2">
+											<b>pour une durée approximative de </b> 	
+										</div>
+										<div class="col-md-4">
+											<div class="input-group">
+												<input class="form-control" placeholder="durée" type="number">
+												<span class="input-group-addon">Heure(s)</span>
+											</div>
+										</div>
+										<div class="col-md-2">
+											<b>Nature du travail : </b> 	
+										</div>
+										<div class="col-md-4">
+											<select class="form-control">
+												<option value="cheese">Inventaire</option>
+											</select>
+										</div>
+										
+										
+									</div>
+									<br/>
+									
+									<!-- deededededded -->
+									<!-- deededededded -->
+									<div class="row">
+										<div class="col-md-12">
+											<b style="color:red"> Engagement pour le respect de la conformité</b> 	
+										</div>
+									</div>
+									<br/>
+									
+									<!-- deededededded -->
+									<!-- deededededded -->
+									<div class="row">
+										<div class="col-md-6">
+											<span style="font-size:12px">1. Pas plus de 06 jours consécutifs de travail par semaine<br/>
+											2. Nombre d'heures normales de travail =  40 heures par semaine<br/>
+											3. Nombre d'heures supplémentaires maximum = 20 heures par semaines<br/>
+											4. Maximum 12 heures par jour ( normales de travail + Heures supplémentaires)</span>
+											
+										</div>
+										<div class="col-md-4">
+											 	<span style="color:red; font-size:10px">j'atteste avoir pris connaissance des dispositions relatives à l'execution des heures supplémentaires et m'engage à les respecter scrupuleusement.</span>
+										</div>
+										<div class="col-md-2">
+											<label class="fancy-checkbox">
+											<input type="checkbox">
+											<span>J'accepte</span>
+									</label>
+											
+										</div>
+									</div>
+									
+									<!-- deededededded -->
+									
+									
+									<!-- deededededded -->
+									<br/>
+									<hr/>
+									<div class="row">
+										<div class="col-md-3">
+											<b style="color:black;">2. Validation chef de departement</b> 	
+										</div>
+										<div class="col-md-4">
+											<div class="input-group">
+												<input class="form-control" placeholder="Username" type="text">
+												<span class="input-group-addon"><i class="fa fa-user"></i></span>
+											</div> 	
+										</div>
+										<div class="col-md-1">
+											<button class="btn btn-success btn-xs" style=""> <i class="fa fa-check"></i></button> 	
+										</div>
+										<div class="col-md-1">
+											<button class="btn btn-danger btn-xs" style=""> <i class="fa fa-times"></i></button> 	
+										</div>
+										<div class="col-md-2">	 	
+										</div>
+										<div class="col-md-1">
+											<b style="color:orange">Attente</b> 	 	
+										</div>
+										
+									</div>
+									
+									<!-- deededededded -->
+									
+									<!-- deededededded -->
+									<br/>
+									<hr/>
+									<div class="row">
+										<div class="col-md-3">
+											<b style="color:black;">3. Validation Ressources Humaines</b> 	
+										</div>
+										<div class="col-md-4">
+											<div class="input-group">
+												<input class="form-control" placeholder="Username" type="text">
+												<span class="input-group-addon"><i class="fa fa-user"></i></span>
+											</div> 	
+										</div>
+										<div class="col-md-1">
+											<button class="btn btn-success btn-xs" style=""> <i class="fa fa-check"></i></button> 	
+										</div>
+										<div class="col-md-1">
+											<button class="btn btn-danger btn-xs" style=""> <i class="fa fa-times"></i></button> 	
+										</div>
+										<div class="col-md-2">	 	
+										</div>
+										<div class="col-md-1">
+											<b style="color:orange">Attente</b> 	 	
+										</div>
+										
+									</div>
+									
+									<!-- deededededded -->
+									
+									<!-- deededededded -->
+									<br/>
+									<hr/>
+									<div class="row">
+										<div class="col-md-3">
+											<b style="color:black; ">4. Validation Directeur d'usine</b> 	
+										</div>
+										<div class="col-md-4">
+											<div class="input-group">
+												<input class="form-control" placeholder="Username" type="text">
+												<span class="input-group-addon"><i class="fa fa-user"></i></span>
+											</div> 	
+										</div>
+										<div class="col-md-1">
+											<button class="btn btn-success btn-xs" style=""> <i class="fa fa-check"></i></button> 	
+										</div>
+										<div class="col-md-1">
+											<button class="btn btn-danger btn-xs" style=""> <i class="fa fa-times"></i></button> 	
+										</div>
+										<div class="col-md-2">	 	
+										</div>
+										<div class="col-md-1">
+											<b style="color:orange">Attente</b> 	 	
+										</div>
+										
+									</div>
+									
+									<!-- deededededded -->
+									
+									<!-- deededededded -->
+									<br/>
+									<hr/>
+									<div class="row">
+										<div class="col-md-12">
+											<b style="color:black">5. DEMANDE DE PAIEMENT DES HEURES SUPPLEMENTAIRES AUTORISEES ET EXECUTEES</b> 	
+										</div>
+									</div>
+									<br/>
+									
+									<!-- deededededded -->
+									
+									<!-- deededededded -->
+									<div class="row">
+										<div class="col-md-12">
+											<b >J'atteste que le collaborateur à effectué les heures supplémentaires demandées et sollicite l'autorisation pour approuver ces heures dans le système Kronos</b> 	
+										</div>
+										
+									</div>
+									<br/>
+									
+									<!-- deededededded -->
+									<!-- deededededded -->
+									<div class="row">
+										<div class="col-md-3">
+											<b>Heures à approuver dans Kronos : </b> 	
+										</div>
+										<div class="col-md-3">
+											<div class="input-group">
+												<input class="form-control" placeholder="durée" type="number">
+												<span class="input-group-addon">Heure(s)</span>
+											</div>
+											
+										</div>
+									</div>
+									
+									<!-- deededededded -->
+									<!-- deededededded -->
+									<br/>
+									<hr/>
+									<div class="row">
+										<div class="col-md-3">
+											<b style="color:black">6. Validation chef de departement</b> 	
+										</div>
+										<div class="col-md-4">
+											<div class="input-group">
+												<input class="form-control" placeholder="Username" type="text">
+												<span class="input-group-addon"><i class="fa fa-user"></i></span>
+											</div> 	
+										</div>
+										<div class="col-md-1">
+											<button class="btn btn-success btn-xs" style=""> <i class="fa fa-check"></i></button> 	
+										</div>
+										<div class="col-md-1">
+											<button class="btn btn-danger btn-xs" style=""> <i class="fa fa-times"></i></button> 	
+										</div>
+										<div class="col-md-2">	 	
+										</div>
+										<div class="col-md-1">
+											<b style="color:orange">Attente</b> 	 	
+										</div>
+										
+									</div>
+									
+									<!-- deededededded -->
+									
+									<!-- deededededded -->
+									<br/>
+									<hr/>
+									<div class="row">
+										<div class="col-md-3">
+											<b style="color:black">7. Validation Ressources Humaines</b> 	
+										</div>
+										<div class="col-md-4">
+											<div class="input-group">
+												<input class="form-control" placeholder="Username" type="text">
+												<span class="input-group-addon"><i class="fa fa-user"></i></span>
+											</div> 	
+										</div>
+										<div class="col-md-1">
+											<button class="btn btn-success btn-xs" style=""> <i class="fa fa-check"></i></button> 	
+										</div>
+										<div class="col-md-1">
+											<button class="btn btn-danger btn-xs" style=""> <i class="fa fa-times"></i></button> 	
+										</div>
+										<div class="col-md-2">	 	
+										</div>
+										<div class="col-md-1">
+											<b style="color:orange">Attente</b> 	 	
+										</div>
+										
+									</div>
+									
+									<!-- deededededded -->
+									
+									<!-- deededededded -->
+									<br/>
+									<hr/>
+									<div class="row">
+										<div class="col-md-3">
+											<b style="color:black">8. Validation Directeur d'usine</b> 	
+										</div>
+										<div class="col-md-4">
+											<div class="input-group">
+												<input class="form-control" placeholder="Username" type="text">
+												<span class="input-group-addon"><i class="fa fa-user"></i></span>
+											</div> 	
+										</div>
+										<div class="col-md-1">
+											<button class="btn btn-success btn-xs" style=""> <i class="fa fa-check"></i></button> 	
+										</div>
+										<div class="col-md-1">
+											<button class="btn btn-danger btn-xs" style=""> <i class="fa fa-times"></i></button> 	
+										</div>
+										<div class="col-md-2">	 	
+										</div>
+										<div class="col-md-1">
+											<b style="color:orange">Attente</b> 	 	
+										</div>
+										
+									</div>
+									
+									<!-- deededededded -->
+									<br/>
+									<hr/>
+									<div class="row">
+										<div class="col-md-12">
+											<b style="color:black">9. VALIDATION DES HEURES SUPPLEMENTAIRE POUR PAIEMENT DANS LES SALAIRES</b> 	
+										</div>
+									</div>
+									
+									<!-- deededededded -->
+									<br/>
+									<div class="row">
+										<div class="col-md-8">
+											<b>
+												Le Suppérieur Hiérachique doit s'assurer de la validation des  heures effectuées dans Kronos
+											</b>
+										</div>
+										<div class="col-md-4">
+											<button class="btn btn-primary " style="width:100%"> Autoriser le paiement </button> 	
+										</div>
+										
+									</div>
+									
+									
+									
+								
+								</div>
+							</div>
+							<!-- END INPUT GROUPS -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- END MAIN CONTENT -->
+		</div>
+{{ form_end(form) }}
+
+{% endblock %}
