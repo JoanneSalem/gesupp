@@ -7,7 +7,7 @@ use App\Entity\Utilisateur;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
-use Symfony\Component\Form\Extension\Core\Type\EntityType;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -21,7 +21,10 @@ class DemandeFormType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
+            ->add('idDemandeur', EntityType::class, ["mapped" => false, 'class'=>Utilisateur::class, "choice_label"=>'nom'])
             ->add('idCollaborateur', EntityType::class, ["mapped" => false, 'class'=>Utilisateur::class, "choice_label"=>'nom'])
+            ->add('matricule', EntityType::class, ["mapped" => false, 'class'=>Utilisateur::class, "choice_label"=>'matricule'])
+            ->add('departement', EntityType::class, ["mapped" => false, 'class'=>Utilisateur::class, "choice_label"=>'departement'])
             ->add('dateFin', DateType::class, ['widget'=>'single_text', 'required' => false])
             ->add('dateDebut', DateType::class, ['widget'=>'single_text', 'required' => false])
             ->add('duree')
